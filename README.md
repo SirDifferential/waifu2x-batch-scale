@@ -8,6 +8,8 @@ You need waifu2x-ncnn-vulkan from https://github.com/nihui/waifu2x-ncnn-vulkan a
 
 Modify the code to have the right input and output directories, path to the scaler software, specify your used model, scaling ratio and denoising ratio, then run: `python3 scale.py`
 
+You can use ^C to stop processing. If you then re-execute the program, it will continue from where it left off.
+
 ### Useful things
 
 * Disassemble a video into individual frames: `ffmpeg -i video.mp4 -r 29/1 out%09d.png`
